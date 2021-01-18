@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifts</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+</head>
+
+<body>
+    <div class="wrapper poll-page">
+        <div class="poll-container">
+
+
+            <div class="poll-first">
+                <div class="poll-top-progressbar"></div>
+                <h1 class="pollquestion">Вы знали о том что в трц МегаГринн есть лазертаг арена? </h1>
+
+                <div class="grid">
+                    <div class="grid-item width-1-2">
+                        
+                        <input class="checkbox" id="ansyes" name="answer"  type="radio">
+                        <label  class="label" for="ansyes">Да</label>
+                    </div>
+                    <div class="grid-item width-1-2">
+
+                        <input id="ansno" class="checkbox" name="answer"  type="radio">
+                        <label  class="label" for="ansno"> Нет</label>
+                    </div>
+                </div>
+
+
+<div class="your-variant">
+    <label for="coment"> Ваш вариант</label>
+                <input type="text" id="coment" placeholder="Не обязательно">
+
+</div>
+            <button class="prev-poll button-blocked button-poll">Назад</button>
+            <button class="next-poll button-poll"> Следущий вопрос</button>
+
+                <div class="poll-progress-bar">
+                    <p class="poll-progress">1 / 7</p>
+                </div>
+            </div>
+
+            @@include('./html-templates/calmgift.html')
+        </div>
+
+
+    </div>
+
+    @@include('./html-templates/footer.html')
+    <script src="js/poll.js"> </script>
+</body>
+
+</html>

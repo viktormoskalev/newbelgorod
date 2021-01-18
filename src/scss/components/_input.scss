@@ -1,0 +1,79 @@
+
+
+
+.checkbox{
+    display: none;
+}
+
+@keyframes movbtn{
+    0% {
+    
+      transform: scale3d(1,1,1);
+  }
+  50% {
+      transform: scale3d(1.05,1.05,1.05);
+  }
+  
+  100% {
+      transform: scale3d(1,1,1);
+   
+    }
+  }
+
+.label{
+    
+    display: inline-block;
+    cursor: pointer;
+    font-size: 40px;
+    animation-name: movbtn;
+    animation-duration: 2s;
+   animation-iteration-count: infinite;
+    &::before{
+
+        transition: 0.5s;
+
+        content: "";
+        background-clip:content-box;
+padding: 10px;
+border-radius: 50%;
+
+background-repeat: no-repeat;
+        background-size: 1px; 
+ 
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        border:solid black 1px;
+  
+       margin-right: 5px;
+    }
+}
+
+.checkbox:checked + label{
+
+&::before{
+    background-color: rgba(11, 102, 67, 0.713);
+    box-shadow: inset 0px 0px 21px 1px rgba(3, 255, 32, 0.378) ;
+    border:solid rgb(33, 124, 94) 1px;
+}
+}
+
+label:hover{
+
+&::before{
+
+    box-shadow: inset 0px 0px 21px 1px rgba(3, 255, 32, 0.378) ;
+    border:solid rgb(33, 124, 94) 1px;
+}
+}
+
+
+.your-variant{
+    padding: 30px;
+    font-size: 33px;
+}
+
+input{
+    padding: 10px;
+    vertical-align: middle;
+}

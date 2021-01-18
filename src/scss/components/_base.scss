@@ -1,0 +1,135 @@
+$breakpoint-s:320px;
+$breakpoint-m:480px;
+$breakpoint-l:767px;
+$breakpoint-xl:991px;
+$breakpoint-xxl:1200px;
+$bgc-body-point:#d83341;
+$bgc-body:#e94956;
+$bgc-body-gradient:#f34856;
+
+body{
+background-repeat: repeat;
+
+background-image: url(../images/background78.png);
+color: rgb(0, 0, 0);
+text-align: center;
+}
+
+.stormtrooper{
+  max-height: 100vh;
+  object-fit: contain;
+  bottom:0;
+  width: 70px;
+  right: 0;
+}
+
+
+.fixed{
+  position: fixed;
+}
+
+.relative{
+  position:relative;
+}
+
+
+.wrapper{
+  background-size: cover;
+
+  z-index: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+html , body{
+  margin: 0;
+  padding: 0;
+  font-family:
+  -apple-system,
+  BlinkMacSystemFont,
+  Segoe UI, Roboto,
+  Oxygen, Ubuntu,
+  Cantarell, Fira
+  Sans, Droid Sans,
+  Helvetica Neue,
+  sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.black-color{
+  color:black;
+}
+
+figure{
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+
+
+
+@media screen and (min-width: $breakpoint-m){
+.container{
+  padding: 0 40px;
+}
+
+.stormtrooper{
+  max-height: 100vh;
+  object-fit: contain;
+  bottom:0;
+  width: 100px;
+  right: 0;
+}
+  
+}
+
+@media screen and (min-width: $breakpoint-l){
+  .container{
+    padding: 0 70px;
+  }
+  
+  .stormtrooper{
+    max-height: 100vh;
+    object-fit: contain;
+    bottom:0;
+width: 50%;
+ 
+  }
+}
+
+@media screen and (min-width: $breakpoint-xl){
+
+}
+@media screen and (min-width: $breakpoint-xxl){
+
+  
+}
+
